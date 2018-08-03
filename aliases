@@ -1,0 +1,213 @@
+# Remplazos
+alias mkdir="mkdir -p"
+alias df="df -h"
+
+#cordova
+alias android="cordova run android"
+
+#git
+alias g="git"
+alias add="git add"
+alias ada="git add -A"
+alias adda="git add -A"
+alias branch="git branch"
+alias checkout="git checkout"
+alias clone="git clone"
+alias commit="git commit -m"
+alias fetch="git fetch"
+alias gdiff="git diff"
+alias init="git init"
+alias merge="git merge"
+alias pull="git pull"
+alias pul="git pull"
+alias push="git pull; git push"
+alias stash="git stash"
+alias status="git status"
+alias gs="git status"
+alias fix="ggg fix"
+alias save="ggg save"
+alias uberimage="lein uberimage"
+alias ga="git add"
+alias gb="git branch"
+alias gc="git commit -m"
+alias gd="git diff"
+alias gi="git init"
+alias gm="git merge"
+
+#lein
+alias ancient="lein ancient upgrade :interactive :allow-snapshots"
+alias ancientplugins="lein ancient upgrade-profiles :interactive :allow-snapshots"
+alias ancientr="lein ancient :allow-snapshots :recursive"
+alias bikeshed="lein bikeshed"
+alias check="lein check"
+alias clean="lein clean"
+alias deploy="lein deploy"
+alias deps="lein deps"
+alias eastwood="lein eastwood"
+alias figwheel="rlwrap lein figwheel"
+alias kibit="lein kibit"
+alias new="lein new"
+alias repl="lein repl"
+alias lrs="lein ring server"
+alias run="lein run"
+alias test="lein test"
+alias uberjar="lein uberjar"
+alias la="lein ancient"
+alias lb="lein bikeshed"
+alias lc="lein check"
+alias ld="lein deps"
+alias le="lein eastwood"
+alias lf="rlwrap lein figwheel"
+alias lk="lein kibit"
+alias lr="lein repl"
+alias lrm="lein run -m"
+alias lt="lein test"
+alias lu="lein uberjar"
+
+#npm
+alias nbuy="npm install -g"
+
+#grunt
+alias build="grunt build"
+alias serve="grunt serve"
+alias upload="ionic upload"
+alias hello="subl . && grunt serve"
+
+# navigation
+alias c="cd"
+alias cg="cd ~/git"
+alias l="ls -lah"
+alias pw="pwd"
+alias dotfiles="cd ~/git/dotfiles"
+
+## System
+alias sr="su root"
+alias sizes="du -sh --max-depth=1"
+
+#ROS
+alias rbag="rosbag"
+alias rbagp="rosbag play"
+alias rbagr="rosbag record"
+alias rcd="roscd"
+alias rcore="roscore"
+alias rcp="roscp"
+alias red="rosed"
+alias rlaunch="roslaunch"
+alias launch="roslaunch"
+#NICE: roslauncher
+#alias rmake="rosmake"
+alias rmsg="rosmsg"
+alias rmsgl="rosmsg list"
+alias rmsgm="rosmsg md5"
+alias rmsgp="rosmsg package"
+alias rmsgps="rosmsg packages"
+alias rnode="rosnode"
+alias rnodec="rosnode cleanup"
+alias rnodei="rosnode info"
+alias rnodel="rosnode list"
+alias rnodek="rosnode kill"
+alias rnodem="rosnode machine"
+alias rnodes="rosnode list"
+alias rnodep="rosnode ping"
+alias rpack="rospack"
+alias rpack1="rospack depends1"
+alias rparam="rosparam"
+alias rparamd="rosparam dump"
+alias rparamdelete="rosparam delete"
+alias rparamg="rosparam get"
+alias rparaml="rosparam list"
+alias rparamload="rosparam load"
+alias rparamset="rosparam set"
+alias rrun="rosrun" #rrun package launcher
+alias rservice="rosservice"
+alias rservicec="rosservice call"
+alias rservicef="rservice find"
+alias rservicei="rosservice info"
+alias rservicel="rosservice list"
+alias rservices="rosservice list"
+alias rservicet="rosservice type"
+alias rserviceu="rosservice uri"
+alias rtopic="rostopic"
+alias rtopicb="rostopic bw"
+alias rtopice="rostopic echo"
+alias rtopicf="rostopic find"
+alias rtopic="rostopic hz"
+alias rtopici="rostopic info"
+alias rtopicl="rostopic list"
+alias rtopicp="rostopic pub" #flags topic type msg
+alias rtopics="rostopic list"
+alias rtopict="rostopic type"
+
+alias assistant="roslaunch moveit_setup_assistant setup_assistant.launch"
+alias catmake="cd ~/catkin_ws; catkin_make; cd -"
+alias catmakei="cd ~/catkin_ws; catkin_make install; cd -"
+alias catmaker="cd ~/catkin_ws; catkin_make -DCMAKE_BUILD_TYPE=Release; cd -"
+alias catpr="cd ~/catkin_ws; catkin_prepare_release; cd -"
+alias catclean="cd ~/catkin_ws; catkin_make clean; cd -"
+alias console="rqt_console"
+alias plot="rqt_plot"
+alias v-urdf="check_urdf"
+alias g-urdf="urdf_to_graphiz"
+alias xacro="rosrun xacro xacro.py"
+alias gazebo_ros="rosrun gazebo_ros gazebo"
+alias image="rosrun image_view image_view"
+alias imagergb="image image:=/camera/rgb/image_raw"
+alias rviz="rosrun rviz rviz"
+alias openni="roslaunch openni_launch openni.launch"
+alias pr2="roslaunch pr2_moveit_config demo.launch"
+alias demo="roslaunch seven_dof_arm_config demo.launch"
+alias rseriala="rosrun rosserial_arduino make_libraries.py ."
+alias rserialb="rosrun rosserial_python serial_node.py" #/dev/ttyACM0
+alias rosbridge="roslaunch rosbridge_server rosbridge_websocket.launch"
+#alias rosbridgepy="rosrun rosbridge rosbridge.py"
+
+#Serial port
+alias ttys="dmesg | grep tty"
+
+# SVC daemontools
+alias svch="svc -h" #sends HUP
+alias svcd="svc -d" #turns off
+alias svcu="svc -u" #turns on
+alias svct="svc -t" #restarts
+alias svco="svc -o" #turns on once
+
+#arch
+alias abuy="yaourt -S --noconfirm"
+alias aupdate="yaourt -Su --aur --noconfirm"
+
+#fedora
+alias buy="sudo dnf install -y"
+alias updt="sudo dnf update -y"
+
+#ubuntu
+alias ubuy="sudo apt-get install -y"
+
+alias obsolescence="sudo ~/git/dotfiles/scripts/npm-upgrade.sh; brew update; ~/git/dotfiles/scripts/gem-upgrade.sh; lein upgrade; cd ~/.emacs.d; git pull; cd -; cd ~/git/dotfiles; git pull; cd -; lein ancient upgrade-profiles"
+alias pubkey="cat ~/.ssh/id_rsa.pub"
+alias ff="firefox"
+alias s="subl ."
+alias e="emacs . &"
+alias v="vim"
+alias conf="emacs $HOME/git/dotfiles &"
+alias zconf="emacs $HOME/.zshrc"
+alias reload!='. ~/.zshrc'
+alias ec='emacsclient'
+alias ec.="ec . &"
+alias dotfiles="cd ~/git/dotfiles; git pull"
+
+#utilities
+alias serve="python -m SimpleHTTPServer"
+alias mame="cat /dev/urandom | hexdump -C | grep \"ca fe\""
+alias dush="du -sm *|sort -n|tail"
+alias modified="sudo find / -mmin 60 -type f"
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+
+alias lso="ls -alG | awk '{k=0;for(i=0;i<=8;i++)k+=((substr(\$1,i+2,1)~/[rwx]/)*2^(8-i));if(k)printf(\" %0o \",k);print}'"
+
+
+#network
+alias subnet15="nmap -sP 192.168.15.1/24"
+
+# Python
+alias pip3update="pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U"
