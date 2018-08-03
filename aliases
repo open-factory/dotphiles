@@ -1,3 +1,11 @@
+#Fns
+mk(){ mkdir "$1" && cd "$1" ; }
+calc () { echo "$*" | bc -l; }
+#git
+ggg() { git add -A && git commit -m "$1" && git pull && git push origin master; }
+ghclone() {git clone https://github.com/$1}
+
+
 # Remplazos
 alias mkdir="mkdir -p"
 alias df="df -h"
