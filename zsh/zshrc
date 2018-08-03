@@ -65,7 +65,7 @@ zstyle ':dotzsh:module:editor' editor 'vi'
 
 ### Completion module
 # Expand global aliases automatically
-#zstyle ':dotzsh:module:completion' expand-global-aliases 'yes'
+zstyle ':dotzsh:module:completion' expand-global-aliases 'yes'
 
 ### SSH module
 zstyle ':dotzsh:module:ssh:agent' forwarding 'yes'
@@ -108,7 +108,8 @@ zstyle ':dotzsh:module:theme' theme 'dotphiles'
 # zstyle ':dotzsh:module:theme:domain:your-domain-here' theme 'dotphiles' 'soldark' 'orange'
 
 ### Load dotzsh
-source "$DOTZSH/init.zsh"
+# source "$DOTZSH/init.zsh"
+source "$HOME/.aliases"
 
 ### Customize to your needs...
 
