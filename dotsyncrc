@@ -17,6 +17,7 @@
 #
 [files]
 # Uncomment examples below
+aliases
 dotsyncrc
 #ack/ackrc
 #aptitude
