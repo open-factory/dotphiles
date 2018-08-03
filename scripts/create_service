@@ -1,0 +1,24 @@
+#!/bin/bash
+
+dir=/etc/service
+var=/var/log
+
+if [ -z $1 ]; then
+	  echo "Escribe el nombre del servicio que vas a crear"
+	  exit 1
+elif [ -z "$2" ]; then
+	  echo "Escribe el comando a ejecutar en el servicio"
+	  exit 1
+elif [ -d $dir/$1 ]; then
+	  echo "Ya existe un servicio con ese nombre"
+	  exit 1
+else
+	  mkdir $dir/$1
+	  mkdir $var/$1
+	  chmod 755 $dir/$1
+	  touch $dir/$1/run
+	  echo -e "#!/bin/bash\n" >> $dir/$1/run
+	  echo "exec $2 &>> $var/$1/$1.log" >> $dir/$1/run
+	  chmod 755 $dir/$1/run
+	  exit 0
+fi

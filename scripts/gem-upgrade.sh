@@ -1,0 +1,1 @@
+gem update `gem list | cut -d ' ' -f 1`

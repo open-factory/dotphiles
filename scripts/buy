@@ -1,0 +1,7 @@
+#!/bin/sh
+APT=$(which apt-get | grep 'not' | wc -l)
+BREW=$(which brew | grep 'not' | wc -l)
+YAOURT=$(which yaourt | grep 'not' | wc -l)
+echo $APT
+echo $BREW
+echo $YAOURT

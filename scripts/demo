@@ -1,0 +1,4 @@
+#!/bin/sh
+roslaunch openni_launch openni.launch
+#roslaunch seven_dof_arm_config demo.launch
+rlaunch seven_dof_arm_gazebo seven_dof_arm_bringup_moveit.launch

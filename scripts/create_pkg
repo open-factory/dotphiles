@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# unos buenos defaults son: roscpp std_msgs actionlib actionlib_msgs
+#                           tf geometry_msgs urdf rviz xacro
+echo "${@:1}"
+
+catkin_create_pkg ${@:1}
+cd $1
+mkdir config
+mkdir include
+mkdir scripts
+mkdir src
+mkdir launch
+mkdir msg
+mkdir srv
+mkdir action
+
+cd ~/catkin_ws/
+catkin_make
+cd -
